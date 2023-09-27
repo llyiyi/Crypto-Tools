@@ -7,7 +7,7 @@ def exgcd(a, b):
         return x, y, q
 
 
-def solve(a, m):
+def Solve(a, m):
     x, _, q = exgcd(a, m)
     if q != 1:
         raise Exception("No solution.")

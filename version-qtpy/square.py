@@ -6,7 +6,7 @@ def x2tool(a, m):
     return list
 
 
-def solve(a, m):
+def Solve(a, m):
     list = x2tool(a, m)
     if len(list) == 0:
         return "No solution"

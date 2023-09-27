@@ -5,5 +5,5 @@ def bettermod(a, c, m):
     return less
 
 
-def solve(a, c, m):
+def Solve(a, c, m):
     return bettermod(a, c, m)
