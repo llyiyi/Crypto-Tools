@@ -17,7 +17,8 @@ class SHA256:
 
     # sha256算法
     def hash(self, message):
-        message = message.encode('UTF-8')
+        if isinstance(message, str):
+            message = message.encode('UTF-8')
         # 哈希初值H
         H = [
         0x6a09e667, 

@@ -1,7 +1,10 @@
 from SM3 import SM3
 from SHA256 import SHA256
 def HMAC(key, message, hashfunc):
-    key = key.encode('UTF-8')
+    if isinstance(message, str):
+        message = message.encode('UTF-8')
+    if isinstance(key, str):
+        key = key.encode('UTF-8')
     # 预处理密钥
     block_size = 64
     if len(key) > block_size:

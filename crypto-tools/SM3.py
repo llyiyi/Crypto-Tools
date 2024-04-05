@@ -43,7 +43,8 @@ class SM3:
 
     # SM3算法
     def hash(self, message):
-        message=message.encode('UTF-8')
+        if isinstance(message, str):
+            message=message.encode('UTF-8')
         # 初始向量IV 
         IV = 0x7380166f4914b2b9172442d7da8a0600a96f30bc163138aae38dee4db0fb0e4e
 
